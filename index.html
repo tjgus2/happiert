@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAPPIERT 해피어트</title>
     <style>
+        /* header */
         * {
             margin: 0;
             padding: 0;
@@ -19,13 +20,20 @@
             font-size: 14px;
         }
 
+        .top_container {
+            background: url(./img/메인컨테이너.png);
+            height: 600px;
+            background-size: cover;
+            margin: 0;
+            padding: 16px 48px;
+        }
+
         .header_container,
         .header_ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: #be201f;
-            margin: 24px 48px
         }
 
         h1,
@@ -35,7 +43,6 @@
         }
 
         .header_ul {
-            margin: 0 4px;
             width: 500px;
             justify-content: flex-start;
         }
@@ -67,15 +74,37 @@
         .header_icon_box>svg>path {
             fill: #be201f;
         }
+
+        .header_main {
+            color: #fff;
+            margin: 12px;
+        }
+
+        .header_main > h2 {
+            font-size: 36px;
+        }
+
+        .header_main > p {
+            margin-top: 24px;
+        }
+
+        /* main */
+        .goods_container > figure {
+            background: url(./img/goods.jpg);
+            width: 437px;
+            height: 535px;
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 
 <body>
-    <section class="top_container">
-        <header>
-            <div class="coupon">
-                <p>1초 회원 가입하고 3만원 쿠폰팩 받기</p>
-            </div>
+    <header>
+        <div class="coupon">
+            <p>1초 회원 가입하고 3만원 쿠폰팩 받기</p>
+        </div>
+        <div class="top_container">
             <div class="header_container">
                 <ul class="header_ul">
                     <li>Brand</li>
@@ -103,15 +132,26 @@
 
                 </div>
             </div>
-        </header>
-        <div class="main_container">
-            <h2>
-                살찌는 장내 환경을 바꾸는 <br>
-                신개념 다이어트 쉐이크
-            </h2>
-            <p>[식욕 조절 & 지방 축적 억제] 물질 함유</p>
+            <div class="header_main">
+                <h2>
+                    살찌는 장내 환경을 바꾸는 <br>
+                    신개념 다이어트 쉐이크
+                </h2>
+                <p>[식욕 조절 & 지방 축적 억제] 물질 함유</p>
+            </div>
         </div>
-    </section>
+    </header>
+    <main>
+        <section class="goods_container">
+            <div class="goods1">
+                <figure></figure>
+                <p>해피어트 마이크로바이옴 쉐이크 곡물맛 3주 플랜(1통)</p>
+                <span>230,000</span>
+                <span>295,000</span>
+                <p>22% off</p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
