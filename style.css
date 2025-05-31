@@ -1,0 +1,193 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .coupon {
+            background-color: #be201f;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+
+        .top_container {
+            background: url(./img/메인컨테이너.png);
+            height: 600px;
+            background-size: cover;
+            margin: 0;
+            padding: 16px 48px;
+        }
+
+        .header_container,
+        .header_ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #be201f;
+        }
+
+        h1,
+        .header_icon_box,
+        .header_ul {
+            display: flex;
+        }
+
+        .header_ul {
+            width: 500px;
+            justify-content: flex-start;
+        }
+
+        li {
+            font-weight: 600;
+            margin: 0 12px;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        h1 {
+            width: 500px;
+            justify-content: center;
+        }
+
+        .header_icon_box {
+            width: 500px;
+            justify-content: flex-end;
+        }
+
+        .header_icon_box>svg {
+            width: 30px;
+            height: 30px;
+            margin: 0 12px;
+            fill: #be201f;
+        }
+
+        .header_icon_box>svg>path {
+            fill: #be201f;
+        }
+
+        .header_main {
+            color: #fff;
+            margin: 12px;
+        }
+
+        .header_main>h2 {
+            font-size: 36px;
+        }
+
+        .header_main>p {
+            margin-top: 24px;
+        }
+
+        /* main */
+        .goods_container {
+            display: flex;
+            margin: 60px auto;
+            justify-content: space-around;
+        }
+
+        .goods1>figure {
+            background: url(./img/goods.jpg);
+            width: 437px;
+            height: 535px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .goods1 {
+            color: #be201f;
+            font-weight: 600;
+        }
+
+        .goods1>span:last-of-type {
+            color: #e0a8a8;
+            text-decoration: line-through;
+            font-weight: 400;
+        }
+
+        .goods1>p:last-of-type {
+            border: 1px solid #be201f;
+            width: 60px;
+            padding: 4px;
+            text-align: center;
+            margin-top: 8px;
+            border-radius: 16px;
+            font-size: 12px;
+        }
+        
+        .slide_text_container {
+            animation: slide_text 30s infinite linear;
+            color: #be201f;
+            margin: 16px auto;
+            white-space: nowrap;
+        }
+
+        .slide_text_container > h2 {
+            font-size: 150px;
+            display: inline-block;
+        }
+
+        @keyframes slide_text {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .gradient_container {
+            display: flex;
+            margin: 24px auto;
+            padding: 70px;
+            justify-content: space-between;
+        }
+
+        .gradient_container > figure:nth-of-type(1) {
+            background: url(./img/gradient1.png);
+            width: 437px;
+            height: 437px;
+        }
+
+        .gradient_container > figure:nth-of-type(2) {
+            background: url(./img/gradient2.png);
+            width: 437px;
+            height: 437px;
+        }
+
+        .gradient_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 437px;
+            height: 437px;
+            padding: 32px;
+            box-sizing: border-box;
+        }
+
+        .gradient_text_top {
+            color: #be201f;
+        }
+
+        .gradient_text_top > h2 {
+            font-size: 48px;
+        }
+
+        .gradient_text > button {
+            background: none;
+            border: 1px solid #be201f;
+            padding: 4px;
+            width: 100px;
+            color: #e0a8a8;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 16px;
+        }
+
+        /* footer */
+        footer {
+            background-color: #be201f;
+            height: 400px;
+            padding: 48px;
+        }
