@@ -188,6 +188,20 @@
         /* footer */
         footer {
             background-color: #be201f;
-            height: 400px;
+            height: 300px;
             padding: 48px;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+        }
+
+        footer > div > h2 {
+            margin-bottom: 28px;
+        }
+
+        .guide > p {
+            border-bottom: 1px solid 
+            #fff;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
         }
